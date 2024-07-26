@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Parcel Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Parcels</h2>
+            <div id="parcels">
+                <!-- Parcel list will be populated here -->
+            </div>
+            <div id="parcelActions">
+                <form id="updateParcelForm">
+                    <h3>Update Parcel Status</h3>
+                    <label for="trackingNumberUpdate">Tracking Number:</label>
+                    <input type="text" id="trackingNumberUpdate" name="trackingNumber" required>
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="Pending">Pending</option>
+                        <option value="In Transit">In Transit</option>
+                        <option value="Delivered">Delivered</option>
+                    </select>
+                    <button type="submit">Update Status</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parcel Management</p>
+    </footer>
+    <script src="js/agent.js"></script>
+</body>
+</html>

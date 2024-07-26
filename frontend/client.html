@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Parcel Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Client Dashboard</h2>
+            <div id="parcels">
+                <!-- Parcel list will be populated here -->
+            </div>
+            <div id="parcelActions">
+                <form id="createParcelForm">
+                    <h3>Create Parcel</h3>
+                    <label for="trackingNumber">Tracking Number:</label>
+                    <input type="text" id="trackingNumber" name="trackingNumber" required>
+                    
+                    <label for="deliveryAgent">Delivery Agent:</label>
+                    <select id="deliveryAgent" name="deliveryAgent" required>
+                        <!-- Options will be populated here -->
+                    </select>
+                    
+                    <button type="submit">Create Parcel</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parcel Management</p>
+    </footer>
+    <script src="js/client.js"></script>
+</body>
+</html>
